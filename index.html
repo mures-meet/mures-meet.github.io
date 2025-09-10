@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mureș Carmeet - Private local meets and events</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="html, css, javascript, jquery">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/vendor/animate.min.css">
+    <link rel="stylesheet" href="css/vendor/aos.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/fancybox.css">
+    
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+    <nav class="site-mobile-menu">
+      <div class="site-logo mb-5">
+          <img src="images/logo-nobg.png" alt="Mureș Carmeet logo" width="100">
+      </div>
+      <div class="site-mobile-inner"></div>
+      <div class="close-wrap d-flex">
+        <a href="#" class="d-flex mt-5 js-menu-toggle">
+          <span class="close-label" data-i18n="nav.menu-close"></span>
+          <div class="close-times">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+          </div>
+        </a>
+      </div>
+    </nav>
+
+
+    <div class="site-wrap">
+
+      <div class="site-inner">
+
+        <div class="lines-wrap">
+          <div class="lines-inner">
+            <div class="lines"></div>
+          </div>
+        </div>
+        <!-- END lines -->
+      
+      <nav class="site-nav site-nav-target">
+
+        <div class="container">
+
+          <a href="#" class="burger-toggle-menu js-burger-toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <div class="row align-items-center justify-content-between text-left">
+            <div class="col-md-5 text-right">
+              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                <li><a href="#cover-section" class="nav-link" data-i18n="nav.top"></a></li>
+                <li><a href="#about-section" class="nav-link" data-i18n="nav.about"></a></li>
+                <li><a href="#meets-section" class="nav-link" data-i18n="nav.carmeets"></a></li>
+              </ul>
+
+            </div>
+            <div class="site-logo pos-absolute">
+              <a href="index.html" class="site-logo">
+                <img src="images/logo-nobg.png" alt="Mureș Carmeet logo" width="95">
+              </a>
+            </div>
+            <div class="col-md-5 text-right text-lg-left">
+              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                <li><a href="#events-section" class="nav-link" data-i18n="nav.events"></a></li>
+                <li><a href="#social-section" class="nav-link" data-i18n="nav.social"></a></li>
+                <li><a href="#contact-section" class="nav-link" data-i18n="nav.contact"></a></li>
+              </ul>
+
+              <!-- <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                <li><a href="#" class="js-menu-toggle" data-i18n="menu"></a></li>
+              </ul> -->
+
+              <div class="nav-lang-selector d-inline-block ml-3" style="position:relative;">
+                <button id="current-lang-btn" class="lang-btn">
+                  <img id="current-lang-flag" src="images/Romanian.png" alt="Română" style="height:2.5em;">
+                  <!-- <span id="current-lang-label"></span> -->
+                </button>
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </nav>
+      <!-- END of nav bar -->
+
+      <div class="cover-v1 overlay jarallax" id="cover-section">
+        <img class="jarallax-img" src="images/header.jpg" alt="">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center mx-auto">
+              <h2 id="header" data-i18n="cover.header"></h2>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about-section" class="swipe-wrap smoothscroll">
+          <span class="phone">
+            <span class="swipe"></span>
+          </span>
+          <span class="swipe-label" data-i18n="swipe-up"></span>
+        </a>
+
+      </div>
+      <!-- END of cover-section -->
+
+      <div class="section mt-4" id="about-section">
+        <div class="container">
+
+          <div class="section-heading-wrap text-center mb-5">
+            <h2 class="heading-h2 text-center divider gsap-reveal" data-i18n="intro.header"></h2>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-lg-7 mb-5 mb-lg-0">
+              <div data-aos="fade-in" data-aos-delay="1000">
+                <!-- <figure class="dotted-bg"></figure> -->
+                  <img src="images/mscm.png" alt="Mureș Carmeet logo" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+
+            <div class="col-lg-4 pr-lg-5">
+              <h3 class="heading-h3 gsap-reveal mb-3" data-i18n="about.header"></h3>
+              <p class="lead gsap-reveal" data-i18n="about.info1"></p>
+              <p class="lead gsap-reveal mb-4" data-i18n="about.info2"></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- END of about-section -->
+
+      <div class="section" id="meets-section">
+        <div class="container">
+
+          <div class="relative">
+            <div class="loader-meets-wrap">
+              <div class="loader-meets"></div>
+            </div>
+          </div>
+          <div id="meets-single-holder"></div>
+
+          <div class="meets-wrapper">
+
+            <div class="align-items-center gsap-reveal">
+              <h2 class="heading-h2 text-center mr-auto mb-4" data-i18n="meets.header"></h2>
+              <p class="text-justify gsap-reveal" data-i18n="meets.info"></p>
+            </div>
+
+            <div id="posts" class="row gutter-isotope-item">
+
+              <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="images/meet1.jpg" class="meets-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Meet 27/07/2024">
+                    <div class="overlay">
+                      <!-- <span class="wrap-icon icon-photo2"></span> -->
+                      <div class="meets-item-content">
+                        <h3>Meet 27.07.2024</h3>
+                      </div>
+                    </div>
+                    <img src="images/meet1.jpg" class="lazyload img-fluid" alt="Meet 27/07/2024"/>
+                  </a>
+              </div>
+
+              <div class="item illustration packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="images/meet2.jpg" class="meets-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Meet 30/08/2024">
+                    <div class="overlay">
+                      <!-- <span class="wrap-icon icon-photo2"></span> -->
+                      <div class="meets-item-content">
+                        <h3>Meet 30.08.2024</h3>
+                      </div>
+                    </div>
+                    <img src="images/meet2.jpg" class="lazyload img-fluid" alt="Meet 30/08/2024"/>
+                  </a>
+              </div>
+
+              <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="images/meet3.jpg" class="meets-item item-portrait isotope-item gsap-reveal-img " data-fancybox="gallery" data-caption="Meet 30/08/2024">
+                    <div class="overlay">
+                      <!-- <span class="wrap-icon icon-photo2"></span> -->
+                      <div class="meets-item-content">
+                        <h3>Meet 30.08.2024</h3>
+                      </div>
+                    </div>
+                    <img src="images/meet3.jpg" class="lazyload img-fluid" alt="Meet 30/08/2024"/>
+                  </a>
+              </div>
+
+              <div class="item web illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="images/meet4.jpg" class="meets-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Meet 16/08/2024">
+                    <div class="overlay">
+                      <!-- <span class="wrap-icon icon-photo2"></span> -->
+                      <div class="meets-item-content">
+                        <h3>Meet 16.08.2024</h3>
+                      </div>
+                    </div>
+                    <img src="images/meet4.jpg" class="lazyload img-fluid" alt="Meet 16/08/2024"/>
+                  </a>
+              </div>
+
+              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="images/vid1.mp4" class="meets-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Meet 22/03/2025">
+                    <div class="overlay">
+                      <span class="wrap-icon icon-play"></span>
+                      <div class="meets-item-content">
+                        <h3>Meet 22.03.2025</h3>
+                      </div>
+                    </div>
+                    <img src="images/bmw.JPG" class="lazyload img-fluid" alt="Meet 22/03/2025"/>
+                  </a>
+              </div>
+            </div>
+            <!-- END of meets-section -->
+
+            <div class="align-items-center text-center pt-5" id="events-section">
+              <h2 class="heading-h2 text-center mr-auto gsap-reveal" data-i18n="events.header"></h2>
+              <p class="text-justify gsap-reveal" data-i18n="events.info"></p>
+            </div>
+
+            <!-- <div class="section-heading-wrap text-center mb-5">
+              <h5 class="text-center divider"><span class="bold gsap-reveal" data-i18n="collab.header"></span></h5>
+            </div>
+
+            <div class="owl-carousel logo-slider">
+              <div class="logo-v1 gsap-reveal">
+                <img src="images/royal.png" alt="Royal logo" class="img-fluid" loading="lazy">
+              </div>
+              <div class="logo-v1 gsap-reveal">
+                <img src="images/smiley.jpg" alt="Smiley Detailing logo" class="img-fluid" loading="lazy">
+              </div>
+              <div class="logo-v1 gsap-reveal">
+                <img src="images/logo-paypal.png" alt="Image" class="img-fluid">
+              </div>
+              <div class="logo-v1 gsap-reveal">
+                <img src="images/logo-adobe.png" alt="Image" class="img-fluid">
+              </div>
+            </div> -->
+
+            <div id="posts" class="row gutter-isotope-item">
+
+              <div class="item web illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="images/royal.jpeg" class="meets-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Eveniment Royal Car Wash">
+                    <div class="overlay">
+                      <div class="meets-item-content">
+                        <h3 data-i18n="event.royal"></h3>
+                      </div>
+                    </div>
+                    <img src="images/royal.jpeg" class="lazyload img-fluid" alt="Royal Car Wash event" loading="lazy"/>
+                  </a>
+              </div>
+
+              <!-- <div class="item web illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="images/royal2.jpg" class="meets-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Eveniment Royal Car Wash">
+                    <div class="overlay">
+                      <div class="meets-item-content">
+                        <h3>Eveniment Royal Car Wash</h3>
+                      </div>
+                    </div>
+                    <img src="images/royal2.jpg" class="lazyload img-fluid" alt="Royal Car Wash event"/>
+                  </a>
+              </div> -->
+
+              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="images/royal2.jpg" class="meets-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Eveniment Royal Car Wash">
+                    <div class="overlay">
+                      <div class="meets-item-content">
+                        <h3 data-i18n="event.royal"></h3>
+                      </div>
+                    </div>
+                    <img src="images/royal2.jpg" class="lazyload img-fluid" alt="Royal Car Wash event" loading="lazy"/>
+                  </a>
+              </div>
+
+              <!-- <div class="item branding packaging illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
+                <a href="images/royal4.jpg" class="meets-item item-portrait isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Eveniment Royal Car Wash">
+                    <div class="overlay">
+                      <div class="meets-item-content">
+                        <h3>Eveniment Royal Car Wash</h3>
+                      </div>
+                    </div>
+                    <img src="images/royal4.jpg" class="lazyload img-fluid" alt="Royal Car Wash event"/>
+                  </a>
+              </div> -->
+
+              <div class="item branding packaging col-sm-6 col-md-7 col-lg-4 isotope-mb-2 mx-auto">
+                <a href="images/royal3.jpg" class="meets-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Eveniment Royal Car Wash">
+                    <div class="overlay">
+                      <div class="meets-item-content">
+                        <h3 data-i18n="event.royal"></h3>
+                      </div>
+                    </div>
+                    <img src="images/royal3.jpg" class="lazyload img-fluid" alt="Royal Car Wash event" loading="lazy"/>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END of events-section -->
+
+      <div class="section" id="social-section">
+        <div class="container">
+
+          <div class="section-heading-wrap text-center mb-3">
+            <h2 class="heading-h2 divider gsap-reveal" data-i18n="social.header"></h2>
+            <p class="text-justify gsap-reveal" data-i18n="social.info"></p>
+            <p class="text-justify gsap-reveal" data-i18n="social.info1"></p>
+            <p class="text-justify gsap-reveal" data-i18n="social.info2"></p>
+          </div>
+
+          <!-- Instagram profile card -->
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div data-aos="fade-up" data-aos-delay="1500">
+                <div class="wrap-icon mb-3">
+                  <div class="instagram profile-card">
+                    <img src="images/insta-logo2.png" alt="instagram logo" width="50%">
+                    <div class="profile-img">
+                      <img src="images/logo-profile.png" alt="Instagram profile logo" width="100%">
+                    </div>
+                    <div class="bio">
+                      <h3 class="heading-h3 text-center"><span class="wrap-icon icon-instagram"></span> mures.carmeet</h3>
+                      <span data-i18n="social.bio1"></span><br>
+                      <span data-i18n="social.bio2"></span><br>
+                      <span data-i18n="social.bio3"></span>
+                    </div>
+                    <div class="stats">
+                      <div class="posts">
+                        <p class="number">36</p>
+                        <span class="label">posts</span>
+                      </div>
+                      <div class="followers">
+                        <p class="number">2.070</p>
+                        <span>followers</span>
+                      </div>
+                      <div class="following">
+                        <p class="number">3.340</p>
+                        <span>following</span>
+                      </div>
+                    </div>
+                    <div class="profile-btns">
+                      <a href="https://instagram.com/_u/mures.carmeet/">
+                        <button type="button" class="profile-btn btn-outline-pill btn-custom-light" id="follow-btn">
+                          Follow
+                        </button>
+                      </a>
+                      <a href="https://ig.me/m/mures.carmeet/">
+                        <button type="submit" class="profile-btn btn-outline-pill btn-custom-light" id="message-btn">
+                          Message
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-justify gsap-reveal" data-i18n="social.insta-info"></p>
+            </div>
+
+            <!-- Facebook profile card -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div data-aos="fade-up" data-aos-delay="2000">
+                <div class="wrap-icon mb-3">
+                  <div class="facebook profile-card">
+                    <img src="images/facebook-logo2.png" alt="Facebook logo" class="img-fluid" width="200">
+                    <div class="profile-img">
+                      <img src="images/logo-profile.png" alt="Facebook profile logo" width="100%">
+                    </div>
+                    <div class="bio">
+                      <h3 class="heading-h3 text-center"><span class="wrap-icon icon-facebook-square"></span> Mures Carmeet</h3>
+                      <span data-i18n="social.bio1"></span><br>
+                      <span data-i18n="social.bio2"></span><br>
+                      <span data-i18n="social.bio3"></span>
+                    </div>
+                    <div class="profile-btns">
+                      <a href="https://www.facebook.com/MuresCarmeet">
+                        <button type="button" class="profile-btn btn-outline-pill btn-custom-light" id="follow-btn">
+                          <span class="wrap-icon icon-user-plus"></span>&nbsp;Follow
+                        </button>
+                      </a>
+                      <a href="https://m.me/MuresCarmeet/">
+                        <button type="submit" class="profile-btn btn-outline-pill btn-custom-light" id="message-btn">
+                          <span class="wrap-icon icon-comment"></span>&nbsp;Message
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <p class="text-justify gsap-reveal" data-i18n="social.fb-info"></p>
+            </div>
+
+            <!-- <div class="col-md-6 col-lg-4 mb-4">
+              <div class="feature-v1" data-aos="fade-up" data-aos-delay="2000">
+                <div class="wrap-icon">
+                  <img src="images/YouTube-logo.png" alt="Image" width="205">
+                </div>
+                <h3>YouTube - Mureș Carmeet</h3>
+                <p>Videoclip-uri și vlog-uri cu atmosfera de la meet-uri și evenimente + scurt metraje cu mașinile membrilor comunității Mureș Carmeet. </p>
+              </div> 
+            </div> -->
+
+            <!-- WhatsApp profile card -->
+            <div class="col-md-7 col-lg-4 mx-auto mb-4">
+              <div data-aos="fade-up" data-aos-delay="2500">
+                <div class="wrap-icon mb-3">
+                  <div class="whatsApp profile-card">
+                    <img src="images/WhatsApp-logo2.png" alt="WhatsApp logo" class="img-fluid" width="170">
+                    <div class="profile-img mb-3">
+                      <img src="images/logo-profile.png" alt="WhatsApp profile logo" width="100%">
+                    </div>
+                    <!-- <div class="bio">
+                      <h3 class="heading-h3 text-center">
+                        Mureș Carmeet
+                      </h3>
+                    </div> -->
+                    <div class="profile-btns mb-4">
+                      <a href="https://wa.me/40769982352">
+                        <button type="submit" class="profile-btn btn-outline-pill btn-custom-light" id="message-btn">
+                          Contact
+                          <span class="wrap-icon icon-comment"></span>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <p class="text-justify gsap-reveal" data-i18n="wapp.info"></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- END of social-section -->
+
+      <div class="section" id="contact-section">
+        <div class="container">
+          <div class="section-heading-wrap text-center mb-4">
+            <h2 class="heading-h2 divider gsap-reveal mb-4" data-i18n="contact.header"></h2>
+             <p class="text-justify gsap-reveal" data-i18n="contact.info"></p>
+          </div>
+
+          <div class="row justify-content-between">
+            
+            <div class="col-md-7 mx-auto text-center">
+              <form method="post" class="form-outline-style-v1" id="contactForm">
+                <div class="form-group row mb-0">
+                  <span class="wrap-icon icon-user-o"></span>
+                  <div class="col-lg-6 form-group gsap-reveal pl-5">
+                    <span class="wrap-icon icon-user-o"></span>
+                    <label for="name" data-i18n="form.name"></label>
+                    <input name="name" type="text" class="form-control" id="name" autocomplete="off">
+                  </div>
+                  <div class="col-lg-6 form-group gsap-reveal pl-5">
+                    <span class="wrap-icon icon-car"></span>
+                    <label for="car-model" data-i18n="form.car-model"></label>
+                    <input name="car-model" type="text" class="form-control" id="car-model" autocomplete="off">
+                  </div>
+                  <div class="col-lg-6 form-group gsap-reveal pl-5">
+                    <span class="wrap-icon icon-instagram"></span>
+                    <label for="instagram">Instagram</label>
+                    <input name="instagram" type="text" class="form-control" id="instagram">
+                  </div>
+                  <div class="col-lg-6 form-group gsap-reveal pl-5">
+                    <span class="wrap-icon icon-facebook-square"></span>
+                    <label for="facebook">Facebook</label>
+                    <input name="facebook" type="text" class="form-control" id="facebook">
+                  </div>
+                  <div class="col-lg-6 form-group gsap-reveal mx-auto pl-5">
+                    <span class="wrap-icon icon-whatsapp"></span>
+                    <label for="whatsapp" data-i18n="form.whatsapp"></label>
+                    <input name="whatsapp" type="text" class="form-control" id="whatsapp">
+                  </div>
+                  <div class="col-lg-12 form-group gsap-reveal">
+                    <span class="wrap-icon icon-textsms"></span>
+                    <label for="message" style="padding-left: 2rem;" data-i18n="form.message"></label>
+                    <textarea name="message" id="message" cols="30" rows="4" class="form-control" style="text-indent: 2em;"></textarea>
+                  </div>
+                </div>
+                <p class="gsap-reveal text-left" data-i18n="form.important"></p>
+                <p class="gsap-reveal text-left" data-i18n="form.info"></p>
+                <div class="form-group row gsap-reveal mt-3">
+                    <div class="col-md-12 d-flex">
+                      <button type="submit" class="btn btn-outline-pill btn-custom-light" data-i18n="send.button">
+                      <span class="submitting"></span>
+                      </button>
+                    </div>
+                  </div>
+              </form>
+              <div id="form-message-warning" class="mt-4"></div> 
+              <div id="form-message-success">
+                Cerere trimisă cu succes, mulțumim!
+                Your application was sent, thank you!
+              </div>
+            </div>
+            <!-- END of contact form -->
+          </div>
+        </div>
+      </div><!-- END of contact-section -->
+    </div><!-- END of site-inner -->
+
+      <footer class="footer section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+              
+              <div class="footer-site-logo" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/logo-nobg.png" width="200" alt="footer logo">
+              </div>
+
+              <p id="footer-slogan">Private local meets and events</p>
+              <!-- Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script> | All rights reserved -->
+
+            </div>
+          </div>
+        </div>
+      </footer><!-- END of footer -->
+
+    </div>
+    
+    <!-- Preloader -->
+    <div id="preloader-overlay">
+
+      <div class="loader-wrap">
+        <img src="images/logo-nobg.png" width="250" alt="loader logo">
+        <div class="spinner"></div>
+      </div>
+
+      <div style="width:100%; text-align:center;">
+
+        <div data-aos="fade-in" data-aos-delay="1000">
+          <button class="lang-btn" data-lang="en">
+            <img src="images/English.png" alt="English" class="img-fluid">
+            <p>English</p>
+          </button> 
+        </div>
+
+        <div data-aos="fade-in" data-aos-delay="1250">
+          <button class="lang-btn" data-lang="ro">
+            <img src="images/Romanian.png" alt="Română" class="img-fluid">
+            <p>Română</p>
+          </button>
+        </div>
+
+        <div data-aos="fade-in" data-aos-delay="1500">
+          <button class="lang-btn" data-lang="hu">
+            <img src="images/Magyar.png" alt="Magyar" class="img-fluid">
+            <p>Magyar</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- END of preloader -->
+
+    <script src="js/scripts-dist.js"></script>
+    <script src="js/vendor/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        // Your custom options
+        Toolbar: {
+            display: {
+            left: ["infobar"],
+            middle: ["prev", "iterateZoom", "next"],
+            right: ["close"],
+          },
+        },
+      });
+    </script>
+
+  </body>
+</html>
