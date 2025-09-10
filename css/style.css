@@ -36,7 +36,7 @@
 }
 @font-face {
   font-family: 'Serpentine-BoldOblique';
-  src: url(vendor/Serpentine-BoldOblique.ttf) format('truetype');
+  src: url(vendor/Serpentine-BoldOblique.otf) format('opentype');
   font-weight: bold;
   font-style: oblique;
 }
