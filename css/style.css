@@ -37,8 +37,9 @@
 @font-face {
   font-family: 'Serpentine-BoldOblique';
   src: url(vendor/Serpentine-BoldOblique.otf) format('opentype');
-  font-weight: bolder;
+  font-weight: bold;
   font-style: oblique;
+  font-display: swap; /* Add this for better loading */
 }
 body {
   font-family: "Raleway", sans-serif;
