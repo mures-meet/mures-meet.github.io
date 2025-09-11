@@ -35,8 +35,8 @@
   font-style: italic;
 }
 @font-face {
-  font-family: 'Serpentine-BoldOblique';
-  src: url(vendor/Serpentine-BoldOblique.otf) format('opentype');
+  font-family: 'SerpentineSansBoldOblique';
+  src: url(vendor/SerpentineSansBoldOblique.otf) format('opentype');
   font-weight: bold;
   font-style: oblique;
   font-display: swap; /* Add this for better loading */
@@ -135,7 +135,7 @@ a, a:hover {
 }
 
 #header {
-  font-family: 'Serpentine-BoldOblique';
+  font-family: 'SerpentineSansBoldOblique';
   text-shadow: 2px 2px 1px black;
 }
 
@@ -661,7 +661,7 @@ a, a:hover {
 .site-mobile-menu .close-wrap a .close-label {
   color: #fff;
   margin-right: 15px;
-  font-family: 'Serpentine-BoldOblique';
+  font-family: 'SerpentineSansBoldOblique';
 }
 
 .site-mobile-menu .close-wrap a .close-times {
@@ -704,7 +704,7 @@ a, a:hover {
   padding-left: 20px;
   padding-right: 20px;
   color: #fff;
-  font-family: 'Serpentine-BoldOblique';
+  font-family: 'SerpentineSansBoldOblique';
 }
 
 .site-mobile-menu ul a:hover, .site-mobile-menu ul li a:hover {
@@ -1090,7 +1090,7 @@ a, a:hover {
 .meets-item .meets-item-content h3, .blog-item .meets-item-content h3 {
   font-size: 18px;
   text-shadow: 2px 1.5px black;
-  font-family: 'Serpentine-BoldOblique';
+  font-family: 'SerpentineSansBoldOblique';
 }
 
 .meets-item .meets-item-content p, .blog-item .meets-item-content p {
@@ -1216,7 +1216,7 @@ a, a:hover {
   font-size: 32px;
   color: #fff;
   font-weight: 900;
-  font-family: 'Serpentine-BoldOblique', sans-serif;
+  font-family: 'SerpentineSansBoldOblique', sans-serif;
 }
 
 .heading-h2.divider:before {
@@ -2085,7 +2085,7 @@ figure.dotted-bg:before {
 }
 
 #footer-slogan {
-  font-family: 'Serpentine-BoldOblique', sans-serif;
+  font-family: 'SerpentineSansBoldOblique', sans-serif;
 }
 
 .loader-portfolio-wrap {
