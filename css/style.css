@@ -37,7 +37,7 @@
 @font-face {
   font-family: 'SerpentineSans-BoldOblique';
   src: url(vendor/SerpentineSans-BoldOblique.woff) format('woff'),
-       url(vendor/SerpentineSans-BoldOblique.woff2) format('woff2'),;
+       url(vendor/SerpentineSans-BoldOblique.woff2) format('woff2-variations');
   font-weight: bold;
   font-style: oblique;
   font-display: swap; /* Add this for better loading */
