@@ -36,10 +36,10 @@
 }
 @font-face {
   font-family: 'SerpentineSansICG-BoldOblique';
-  src: url(vendor/SerpentineSansICG-BoldOblique.otf) format('opentype'),
-       url(vendor/SerpentineSansICG-BoldOblique.ttf) format('truetype'),
+  src: url(vendor/SerpentineSansICG-BoldOblique.woff2) format('woff2'),
        url(vendor/SerpentineSansICG-BoldOblique.woff) format('woff'),
-       url(vendor/SerpentineSansICG-BoldOblique.woff2) format('woff2');
+       url(vendor/SerpentineSansICG-BoldOblique.ttf) format('truetype'),
+       url(vendor/SerpentineSansICG-BoldOblique.otf) format('opentype');
   font-weight: bold;
   font-style: oblique;
   font-display: swap; /* Add this for better loading */
