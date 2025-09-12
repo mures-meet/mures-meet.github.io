@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
-@import url(https://db.onlinewebfonts.com/c/118cd52ca23c39504251b4acdbfcac9a?family=SerpentineSansICG-BoldOblique&display=swap);
 @font-face {
   font-family: "Instagram-Sans";
   src: url(vendor/Instagram-Sans.ttf) format("truetype");
@@ -35,7 +34,18 @@
   font-weight: bold;
   font-style: italic;
 }
-
+@font-face {
+  font-family: 'SerpentineSansICG-BoldOblique';
+  src: url(vendor/SerpentineSansICG-BoldOblique.otf) format('opentype'),
+       url(vendor/SerpentineSansICG-BoldOblique.ttf) format('truetype'),
+       url(vendor/SerpentineSansICG-BoldOblique.woff) format('woff'),
+       url(vendor/SerpentineSansICG-BoldOblique.woff2) format('woff2');
+  font-weight: bold;
+  font-style: oblique;
+  font-display: swap; /* Add this for better loading */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
 body {
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -1457,7 +1467,7 @@ figure.dotted-bg:before {
 }
 
 .facebook {
-  background-position: 20% 50%;
+  background-position: 18% 50%;
   background-image: url("../images/facebook-bg.jpg");
 }
 
