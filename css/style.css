@@ -40,10 +40,13 @@
        url(vendor/SerpentineSans-BoldOblique.ttf) format('truetype'),
        url(vendor/SerpentineSans-BoldOblique.woff) format('woff'),
        url(vendor/SerpentineSans-BoldOblique.woff2) format('woff2'),
+       url(vendor/SerpentineSans-BoldOblique.svg) format('svg'),
        url(vendor/SerpentineSans-BoldOblique.eot) format('embedded-opentype');
   font-weight: bold;
   font-style: oblique;
   font-display: swap; /* Add this for better loading */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
 }
 body {
   font-family: "Raleway", sans-serif;
