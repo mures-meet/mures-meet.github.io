@@ -36,10 +36,12 @@
 }
 @font-face {
   font-family: 'SerpentineSansICG-BoldOblique';
-  src: url(vendor/SerpentineSansICG-BoldOblique.woff2) format('woff2'),
+  src: url('SerpentineSansICG-BoldOblique.eot');
+  src: url('SerpentineSansICG-BoldOblique.eot?#iefix') format('embedded-opentype'),
+       url(vendor/SerpentineSansICG-BoldOblique.woff2) format('woff2'),
        url(vendor/SerpentineSansICG-BoldOblique.woff) format('woff'),
        url(vendor/SerpentineSansICG-BoldOblique.ttf) format('truetype');
-  font-weight: normal;
+  font-weight: bold;
   font-style: oblique;
   font-display: swap; /* Add this for better loading */
   -webkit-font-smoothing: antialiased;
