@@ -141,7 +141,7 @@ a, a:hover {
 }
 
 #header {
-  font-family: 'SerpentineSansICG-BoldOblique';
+  font-family: 'SerpentineSansICG-BoldOblique', sans-serif;
   text-shadow: 2px 2px 1px black;
 }
 
@@ -667,7 +667,7 @@ a, a:hover {
 .site-mobile-menu .close-wrap a .close-label {
   color: #fff;
   margin-right: 15px;
-  font-family: 'SerpentineSansICG-BoldOblique';
+  font-family: 'SerpentineSansICG-BoldOblique', sans-serif;
 }
 
 .site-mobile-menu .close-wrap a .close-times {
@@ -710,7 +710,7 @@ a, a:hover {
   padding-left: 20px;
   padding-right: 20px;
   color: #fff;
-  font-family: 'SerpentineSansICG-BoldOblique';
+  font-family: 'SerpentineSansICG-BoldOblique', sans-serif;
 }
 
 .site-mobile-menu ul a:hover, .site-mobile-menu ul li a:hover {
@@ -1096,7 +1096,7 @@ a, a:hover {
 .meets-item .meets-item-content h3, .blog-item .meets-item-content h3 {
   font-size: 18px;
   text-shadow: 2px 1.5px black;
-  font-family: 'SerpentineSansICG-BoldOblique';
+  font-family: 'SerpentineSansICG-BoldOblique', sans-serif;
 }
 
 .meets-item .meets-item-content p, .blog-item .meets-item-content p {
@@ -1848,7 +1848,7 @@ figure.dotted-bg:before {
   padding-top: 12px;
   border-radius: 0;
   color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .form-outline-style-v1 .form-group .form-control:active, .form-outline-style-v1 .form-group .form-control:focus {
