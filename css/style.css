@@ -2147,6 +2147,10 @@ figure.dotted-bg:before {
   z-index: 0;
 }
 
+.jarallax div {
+  will-change: transform;
+}
+
 .jarallax > .jarallax-img,
 picture.jarallax-img img {
   position: absolute;
