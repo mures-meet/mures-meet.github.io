@@ -121,7 +121,7 @@ var loader = function() {
 			   // $('.loader-wrap').css('display', 'none');
            }
        });
-   }, 1000);
+   }, 500);
    
    // Remove the conflicting jQuery fadeOut
    // $(".loader-wrap").delay(400).fadeOut("slow");
@@ -297,10 +297,10 @@ window.addEventListener('DOMContentLoaded', function() {
 	if (lang && translations[lang]) {
 		// Language already selected, apply it and fade out overlay
 		setLanguageAndUpdateNav(lang);
-		$("#preloader-overlay").fadeOut(1000);
+		$("#preloader-overlay").fadeOut(500);
 	} else {
 		// First time visit, fade in language selection overlay
-		$("#preloader-overlay").fadeIn(1500);
+		$("#preloader-overlay").fadeIn(500);
 	}
 });
 
@@ -312,7 +312,7 @@ function languageSelector() {
             if (lang && translations[lang]) {
                 setLanguageAndUpdateNav(lang);
                 // Fade out the overlay smoothly
-                $("#preloader-overlay").fadeOut(1000);
+                $("#preloader-overlay").fadeOut(500);
             }
         });
     });
