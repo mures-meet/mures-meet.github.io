@@ -117,11 +117,11 @@ var loader = function() {
            autoAlpha: 0, 
            ease: Power4.easeInOut,
            onComplete: function() {
-               // Hide the element completely after animation
-               $('.loader-wrap').css('display', 'none');
+			   // Hide the element completely after animation
+			   // $('.loader-wrap').css('display', 'none');
            }
        });
-   }, 500);
+   }, 1500);
    
    // Remove the conflicting jQuery fadeOut
    // $(".loader-wrap").delay(400).fadeOut("slow");
@@ -144,8 +144,8 @@ const translations = {
 	"about.header": "Despre <span style=\"font-family: 'FerroRosso';\">Mureș Carmeet</span>",
 	"about.info1": "Comunitatea <span style=\"font-family: 'FerroRosso';\">Mureș Carmeet</span> a luat naștere în 2023 la inițiativa formării unei comunități auto selecte în Târgu Mureș.",
 	"about.info2": "Din 2023 până în prezent meet-urile sunt organizate periodic la un interval de 2 - 3 săptămâni în timpul sezonului cald, iar o dată pe lună în timpul sezonului rece, în diferite locații din oraș.",
-	"meets.header": "Car meet-uri",
-	"meets.info": "Car meet-urile organizate în comunitatea Mureș Carmeet sunt întâlniri auto private organizate în diferite locații din Târgu Mureș. Acestea sunt ocazii excelente pentru pasionații auto de a se întâlni pentru a socializa și a împărtăși pasiunea pentru automobile.",
+	"meets.header": "Despre meet-uri",
+	"meets.info": "Meet-urile organizate în comunitatea Mureș Carmeet sunt întâlniri auto private organizate în diferite locații din Târgu Mureș. Acestea sunt ocazii excelente pentru pasionații auto de a se întâlni, a cunoaște oameni noi, a socializa și a împărtăși pasiunea pentru automobile.",
 	"events.header": "Evenimente auto selecte",
 	"collab.header": "Colaboratori evenimente auto selecte",
 	"events.info": "Evenimentele selecte sunt organizate doar în timpul sezonului cald primăvară-toamnă, la una din locațiile colaboratorilor noștri.",
@@ -186,8 +186,8 @@ const translations = {
 	"about.header": "About <span style=\"font-family: 'FerroRosso';\">Mures Carmeet</span>",
 	"about.info1": "The <span style=\"font-family: 'FerroRosso';\">Mures Carmeet</span> community was born in 2023 with the aim of creating a select car community in Targu Mures.",
 	"about.info2": "Since 2023, the meets are organized periodically every 2 - 3 weeks during the warm season, and once a month during the cold season, in different locations around the city.",
-	"meets.header": "Car meets",
-	"meets.info": "The car meets organized by the Mureș Carmeet community are private car gatherings organized in different locations in Targu Mures. They are great opportunities for car enthusiasts to meet, socialize, and share their passion for cars.",
+	"meets.header": "About meets",
+	"meets.info": "The meets organized by the Mures Carmeet community are private car meets organized in different locations in Targu Mureș. They are great opportunities for car enthusiasts to meet new people, socialize, and share their passion for cars.",
 	"events.header": "Select car events",
 	"collab.header": "Private car events collaborators",
 	"events.info": "The select car events are organized only during the warm season spring-autumn, at one of our collaborators' locations.",
@@ -229,7 +229,7 @@ const translations = {
 	"about.info1": "A <span style=\"font-family: 'FerroRosso';\">Mureș Carmeet</span> közösség 2023-ban alakult azzal a céllal, hogy egy kiválasztott autós közösséget hozzon létre Marosvásárhely-ben.",
 	"about.info2": "2023 óta a találkozókat időszakosan, 2-3 hetente szervezik a meleg évszakban, és havonta egyszer a hideg évszakban, a város különböző helyszínein.",
 	"meets.header": "Autós találkozók",
-	"meets.info": "A Mureș Carmeet közösség által szervezett autós találkozók privát autós összejövetelek, amelyeket Marosvásárhely különböző helyszínein szerveznek. Ezek nagyszerű lehetőségek az autórajongók számára, hogy találkozzanak, társasági életet éljenek és megosszák szenvedélyüket az autók iránt.",
+	"meets.info": "A Mureș Carmeet közösség által szervezett találkozók privát autós találkozók, amelyeket Marosvásárhely különböző helyszínein szerveznek. Kiváló lehetőséget kínálnak az autórajongók számára, hogy új emberekkel találkozzanak, szocializálódjanak és megosszák szenvedélyüket az autók iránt.",
 	"events.header": "Kiválasztott autós események",
 	"collab.header": "Privát autós események együttműködők",
 	"events.info": "A kiválasztott autós eseményeket csak a meleg évszakban szervezik tavasz-ősz, az együttműködőink egyik helyszínén.",
@@ -297,7 +297,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	if (lang && translations[lang]) {
 		// Language already selected, apply it and fade out overlay
 		setLanguageAndUpdateNav(lang);
-		$("#preloader-overlay").fadeOut(500);
+		$("#preloader-overlay").fadeOut(1500);
 	} else {
 		// First time visit, fade in language selection overlay
 		$("#preloader-overlay").fadeIn(500);
@@ -317,6 +317,31 @@ function languageSelector() {
         });
     });
 }
+
+// Update the nav language button click handler
+document.addEventListener("DOMContentLoaded", function() {
+    updateNavLangSelector();
+    const overlay = document.getElementById("preloader-overlay");
+    const langBtns = overlay.querySelectorAll('.lang-btn');
+    
+    document.getElementById("current-lang-btn").addEventListener("click", function(e) {
+        e.preventDefault();
+        
+        // Show overlay with fade
+        $(overlay).fadeIn(500);
+        
+        // Reset button positions and animate them in
+        TweenMax.set(langBtns, { z: 50, opacity: 0 });
+        
+        // Animate buttons in with stagger
+        TweenMax.staggerTo(langBtns, 0.8, {
+            y: 0,
+            opacity: 1,
+            ease: Power3.easeOut,
+            delay: 0.3
+        }, 0.2);
+    });
+});
 
 // Update the nav language button click handler
 document.addEventListener("DOMContentLoaded", function() {
