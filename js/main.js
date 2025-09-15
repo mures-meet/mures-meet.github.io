@@ -300,7 +300,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		$("#preloader-overlay").fadeOut(1000);
 	} else {
 		// First time visit, fade in language selection overlay
-		$("#preloader-overlay").fadeIn(500);
+		$("#preloader-overlay").fadeIn(1500);
 	}
 });
 
@@ -312,7 +312,7 @@ function languageSelector() {
             if (lang && translations[lang]) {
                 setLanguageAndUpdateNav(lang);
                 // Fade out the overlay smoothly
-                $("#preloader-overlay").fadeOut(500);
+                $("#preloader-overlay").fadeOut(1000);
             }
         });
     });
