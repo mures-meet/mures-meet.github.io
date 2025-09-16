@@ -117,8 +117,8 @@ var loader = function() {
            autoAlpha: 0, 
            ease: Power4.easeInOut,
            onComplete: function() {
-			   // Hide the element completely after animation
-			   // $('.loader-wrap').css('display', 'none');
+               // Hide the element completely after animation
+               // $('.loader-wrap').css('display', 'none');
            }
        });
    }, 500);
@@ -133,7 +133,7 @@ const translations = {
 	"menu": "Meniu",
 	"nav.top": "Introducere",
 	"nav.about": "Despre Mureș Carmeet",
-	"nav.carmeets": "Car meet-uri",
+	"nav.carmeets": "Despre meet-uri",
 	"nav.events": "Evenimente auto selecte",
 	"nav.social": "Social media",
 	"nav.contact": "Contact",
@@ -175,7 +175,7 @@ const translations = {
 	"menu": "Menu",
 	"nav.top": "Introduction",
 	"nav.about": "About Mures Carmeet",
-	"nav.carmeets": "Car meets",
+	"nav.carmeets": "About meets",
 	"nav.events": "Select Car events",
 	"nav.social": "Social media",
 	"nav.contact": "Contact",
@@ -550,55 +550,67 @@ var floatingLabel = function () {
 };
 
 
-
 // scroll
 var scrollWindow = function() {
    var lastScrollTop = 0;
    $(window).scroll(function(event){
-	   var $w = $(this),
-			   st = $w.scrollTop(),
-			   navbar = $('.site-nav');
-			   // sd = $('.js-scroll-wrap');
+       var $w = $(this),
+           st = $w.scrollTop(),
+           navbar = $('.site-nav'),
+           swipeWrap = $('.swipe-wrap');
 
-	   if (st > 150) {
-		   if ( !navbar.hasClass('scrolled') ) {
-			   navbar.addClass('scrolled');	
-		   }
-	   } 
-	   if (st < 150) {
-		   if ( navbar.hasClass('scrolled') ) {
-			   navbar.removeClass('scrolled sleep');
-		   }
-	   } 
-	   if ( st > 350 ) {
-		   if ( !navbar.hasClass('awake') ) {
-			   navbar.addClass('awake');	
-		   } 
+       // Existing navbar scroll logic
+       if (st > 150) {
+           if ( !navbar.hasClass('scrolled') ) {
+               navbar.addClass('scrolled');	
+           }
+       } 
+       if (st < 150) {
+           if ( navbar.hasClass('scrolled') ) {
+               navbar.removeClass('scrolled sleep');
+           }
+       } 
+       if ( st > 350 ) {
+           if ( !navbar.hasClass('awake') ) {
+               navbar.addClass('awake');	
+           } 
 
-		   // hide / show on scroll
-		   if (st > lastScrollTop){
-		 // downscroll code
-		 navbar.removeClass('awake');	
-		 navbar.addClass('sleep');	
-		  } else {
-		 // upscroll code
-		 navbar.addClass('awake');	
-		  }
-		  lastScrollTop = st;
-		   
+           // hide / show on scroll
+           if (st > lastScrollTop){
+               // downscroll code
+               navbar.removeClass('awake');	
+               navbar.addClass('sleep');	
+           } else {
+               // upscroll code
+               navbar.addClass('awake');	
+           }
+           lastScrollTop = st;
+       }
+       if ( st < 350 ) {
+           if ( navbar.hasClass('awake') ) {
+               navbar.removeClass('awake');
+               navbar.addClass('sleep');
+           }
+       }
 
-	   }
-	   if ( st < 350 ) {
-		   if ( navbar.hasClass('awake') ) {
-			   navbar.removeClass('awake');
-			   navbar.addClass('sleep');
-		   }
-	   }
-
-  
-
+       // NEW: Swipe-wrap fade out logic
+       if (swipeWrap.length) {
+           var fadeStart = 100;  // Start fading at 100px scroll
+           var fadeEnd = 400;    // Complete fade at 400px scroll
+           
+           if (st <= fadeStart) {
+               // At top, fully visible
+               swipeWrap.css('opacity', 1);
+           } else if (st >= fadeEnd) {
+               // Past fade end, fully hidden
+               swipeWrap.css('opacity', 0);
+           } else {
+               // In between, calculate opacity
+               var opacity = 1 - ((st - fadeStart) / (fadeEnd - fadeStart));
+               swipeWrap.css('opacity', opacity);
+           }
+       }
    });
-
 };
 
 
