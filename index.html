@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="css/vendor/fancybox.css">
 
     <!-- Preload critical hero image -->
-    <link rel="preload" as="image" href="images/header.webp" fetchpriority="high">
-    <link rel="preload" as="image" href="images/header.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="images/header.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="images/header.jpg">
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
@@ -109,13 +109,13 @@
         <!-- Use multiple image sources for responsive loading -->
         <picture class="jarallax-img">
           <!-- WebP format for modern browsers -->
-          <source media="(max-width: 768px)" srcset="images/header.webp" type="image/webp">
-          <source media="(min-width: 769px)" srcset="images/header.jpg" type="image/jpeg">
+          <source media="(max-width: 991.98px)" srcset="images/header.webp" type="image/webp">
+          <source media="(min-width: 992px)" srcset="images/header.jpg" type="image/jpeg">
           <!-- Fallback for jarallax -->
           <img
               src="images/header.jpg" 
-              srcset="images/header.webp 768w, images/header.jpg 1920w"
-              sizes="(max-width: 768px) 768px, 1920px"
+              srcset="images/header.webp 991.98px, images/header.jpg 1920px"
+              sizes="(max-width: 991.98px) 991.98px, 1920px"
               alt="Mureș Carmeet header background"
               loading="eager"
               decoding="async"
